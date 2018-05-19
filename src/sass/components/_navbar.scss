@@ -1,0 +1,32 @@
+.navbar{
+    padding: 20px 40px;
+
+    &__menu{
+        &__item{
+            display: inline-block;
+            min-width: 100px;
+            padding: 0 10px;
+            display: block;
+            text-align: center;
+
+            a{
+                text-decoration: none;
+                color: $secondary;
+                font-size: 1.2rem;
+                padding-bottom: 3px;
+            }
+
+            #linkMaimonides{
+                border-radius: 20px;
+                border: 1px solid $secondary;
+                padding: 5px 15px;
+            }
+
+            &.active{
+                a{
+                    border-bottom: 3px solid $tertiary;
+                }
+            }
+        }
+    }
+}

@@ -1,4 +1,7 @@
 $primary: #333b97;
-$secondary: lighten($primary, 50%);
-$gradient-primary: #5158d1;
-$gradient-secondary: #333b88;
+$secondary: #8685E0;
+$tertiary: #4dffa1;
+$gradient-primary-start: #5158d1;
+$gradient-primary-end: #333b88;
+$gradient-secondary-start: #a6fcd0;
+$gradient-secondary-end: $tertiary;
