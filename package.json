@@ -1,0 +1,25 @@
+{
+  "name": "fidn-website",
+  "version": "1.0.0",
+  "description": "Sitio web para la Fundación Internacional para el Desarrollo de las Neurociencias",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "flexboxgrid": "^6.3.1",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neeco90/fidn-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neeco90/fidn-website/issues"
+  },
+  "homepage": "https://github.com/neeco90/fidn-website#readme"
+}
