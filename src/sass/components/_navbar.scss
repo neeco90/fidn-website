@@ -36,20 +36,23 @@
         }
     }
 
-    &__submenu{
+    #submenu{
         display: none;
         position: absolute;
-        top: 30px;
+
+        &.open{
+            display: block;
+        }
+    }
+
+    &__submenu{
+        margin-top: 10px;
         width: 200px;
         padding: 10px 0;
         background-color: white;
         -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.05);
         -moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.05);
         box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.05);
-        
-        &.open{
-            display: block;
-        }
 
         &__item{
             width: 100%;

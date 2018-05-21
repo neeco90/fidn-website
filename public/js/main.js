@@ -2,21 +2,18 @@ $(document).ready(function(){
     var docencia = $("#docencia");
     var submenu = $("#submenu");
 
-    docencia.on("mouseover", function(){
-        if(!submenu.hasClass("open")){
-            submenu.addClass("open");
-        } else if(submenu.on("mouseover")){
-            submenu.addClass("open");
-        } else{
-            submenu.removeClass("open");
-        }
-    });
-
-    submenu.on("mouseenter", function(){
+    docencia.mouseover(function(){
         submenu.addClass("open");
     });
 
-    submenu.on("mouseout", function(){
+    docencia.mouseleave(function(){
+        submenu.mouseover(function(){
+            return
+        });
+        submenu.removeClass("open");
+    });
+    
+    submenu.mouseleave(function(){
         submenu.removeClass("open");
     });
 })
