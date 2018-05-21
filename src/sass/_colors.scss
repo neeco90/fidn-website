@@ -5,3 +5,15 @@ $gradient-primary-start: #5158d1;
 $gradient-primary-end: #333b88;
 $gradient-secondary-start: #a6fcd0;
 $gradient-secondary-end: $tertiary;
+
+.text-primary{
+    color: $primary;
+}
+
+.text-secondary{
+    color: $secondary;
+}
+
+.text-tertiary{
+    color: $tertiary;
+}

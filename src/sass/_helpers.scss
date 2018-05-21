@@ -1,11 +1,161 @@
-.text-right{
-    text-align: right;
+@media only screen and (min-width: 75em){
+    .text-right--lg{
+        text-align: right;
+    }
+    
+    .text-center--lg{
+        text-align: center;
+    }
+    
+    .text-left--lg{
+        text-align: left;
+    }
+
+    .vmargin-10--lg{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .vmargin-20--lg{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .vmargin-30--lg{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .vmargin-40--lg{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .no-mg--lg{
+        margin: 0;
+    }
+    
+    .no-mg-top--lg{
+        margin-top: 0;
+    }
+    
+    .no-mg-bottom--lg{
+        margin-bottom: 0;
+    }
+    
+    .no-mg-left--lg{
+        margin-left: 0;
+    }
+    
+    .no-mg-right--lg{
+        margin-right: 0;
+    }
 }
 
-.text-center{
-    text-align: center;
+@media only screen and (min-width: 48em){
+    .text-right--sm{
+        text-align: right;
+    }
+    
+    .text-center--sm{
+        text-align: center;
+    }
+    
+    .text-left--sm{
+        text-align: left;
+    }
+
+    .vmargin-10--sm{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .vmargin-20--sm{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .vmargin-30--sm{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .vmargin-40--sm{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .no-mg--sm{
+        margin: 0;
+    }
+    
+    .no-mg-top--sm{
+        margin-top: 0;
+    }
+    
+    .no-mg-bottom--sm{
+        margin-bottom: 0;
+    }
+    
+    .no-mg-left--sm{
+        margin-left: 0;
+    }
+    
+    .no-mg-right--sm{
+        margin-right: 0;
+    }
 }
 
-.text-left{
-    text-align: left;
+@media only screen and (max-width: 47em){
+    .text-right--xs{
+        text-align: right;
+    }
+    
+    .text-center--xs{
+        text-align: center;
+    }
+    
+    .text-left--xs{
+        text-align: left;
+    }
+
+    .vmargin-10--xs{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .vmargin-20--xs{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .vmargin-30--xs{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .vmargin-40--xs{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .no-mg--xs{
+        margin: 0;
+    }
+    
+    .no-mg-top--xs{
+        margin-top: 0;
+    }
+    
+    .no-mg-bottom--xs{
+        margin-bottom: 0;
+    }
+    
+    .no-mg-left--xs{
+        margin-left: 0;
+    }
+    
+    .no-mg-right--xs{
+        margin-right: 0;
+    }
 }
