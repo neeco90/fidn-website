@@ -1,0 +1,28 @@
+.btn{
+    border-radius: 10px;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-size: .9rem;
+    font-family: 'nunito-regular', sans-serif;
+    cursor: pointer;
+    @include all-ease;
+
+    &--primary{
+        color: $tertiary;
+        background: rgba(81,88,209,1);
+        background: -moz-linear-gradient(left, rgba(81,88,209,1) 0%, rgba(51,60,136,1) 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(81,88,209,1)), color-stop(100%, rgba(51,60,136,1)));
+        background: -webkit-linear-gradient(left, rgba(81,88,209,1) 0%, rgba(51,60,136,1) 100%);
+        background: -o-linear-gradient(left, rgba(81,88,209,1) 0%, rgba(51,60,136,1) 100%);
+        background: -ms-linear-gradient(left, rgba(81,88,209,1) 0%, rgba(51,60,136,1) 100%);
+        background: linear-gradient(to right, rgba(81,88,209,1) 0%, rgba(51,60,136,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5158d1', endColorstr='#333c88', GradientType=1 );
+
+        &:hover{
+            background: $tertiary;
+            color: $primary;
+        }
+    }
+}

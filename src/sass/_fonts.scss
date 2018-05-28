@@ -39,6 +39,7 @@ html{
 
 body{
     font-family: 'nunito-regular', sans-serif;
+    color: $primary;
 }
 
 .nunito-black{
@@ -69,8 +70,29 @@ body{
     font-family: 'nunito-extralight', sans-serif;
 }
 
+h1{
+    font-size: 1rem;
+}
+
+h2{
+    font-size: 1rem;
+}
+
+h3{
+    font-size: 1rem;
+}
+
+h4{
+    font-size: 1.3rem;
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
 .headline{
     font-size: .8rem;
-    letter-spacing: 2pt;
+    letter-spacing: 1.5pt;
     text-transform: uppercase;
 }

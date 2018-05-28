@@ -1,3 +1,56 @@
+.text-right--xs{
+    text-align: right;
+}
+
+.text-center--xs{
+    text-align: center;
+}
+
+.text-left--xs{
+    text-align: left;
+}
+
+.vmargin-10--xs{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.vmargin-20--xs{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.vmargin-30--xs{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.vmargin-40--xs{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.no-mg--xs{
+    margin: 0;
+}
+
+.no-mg-top--xs{
+    margin-top: 0;
+}
+
+.no-mg-bottom--xs{
+    margin-bottom: 0;
+}
+
+.no-mg-left--xs{
+    margin-left: 0;
+}
+
+.no-mg-right--xs{
+    margin-right: 0;
+}
+
+//For dektop only
 @media only screen and (min-width: 75em){
     .text-right--lg{
         text-align: right;
@@ -52,6 +105,7 @@
     }
 }
 
+//For tablets only
 @media only screen and (min-width: 48em){
     .text-right--sm{
         text-align: right;
@@ -106,56 +160,188 @@
     }
 }
 
-@media only screen and (max-width: 47em){
-    .text-right--xs{
-        text-align: right;
+.vpadding-10--xs{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.vpadding-20--xs{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.vpadding-30--xs{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.vpadding-40--xs{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.no-pd--xs{
+    padding: 0;
+}
+
+.no-pd-top--xs{
+    padding-top: 0;
+}
+
+.no-pd-bottom--xs{
+    padding-bottom: 0;
+}
+
+.no-pd-left--xs{
+    padding-left: 0;
+}
+
+.no-pd-right--xs{
+    padding-right: 0;
+}
+
+//For dektop only
+@media only screen and (min-width: 75em){
+    .vpadding-10--lg{
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     
-    .text-center--xs{
-        text-align: center;
+    .vpadding-20--lg{
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     
-    .text-left--xs{
-        text-align: left;
+    .vpadding-30--lg{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .vpadding-40--lg{
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
-    .vmargin-10--xs{
-        margin-top: 10px;
-        margin-bottom: 10px;
+    .no-pd--lg{
+        padding: 0;
     }
     
-    .vmargin-20--xs{
-        margin-top: 20px;
-        margin-bottom: 20px;
+    .no-pd-top--lg{
+        padding-top: 0;
     }
     
-    .vmargin-30--xs{
-        margin-top: 30px;
-        margin-bottom: 30px;
+    .no-pd-bottom--lg{
+        padding-bottom: 0;
     }
     
-    .vmargin-40--xs{
-        margin-top: 40px;
-        margin-bottom: 40px;
+    .no-pd-left--lg{
+        padding-left: 0;
+    }
+    
+    .no-pd-right--lg{
+        padding-right: 0;
+    }
+}
+
+//For tablets only
+@media only screen and (min-width: 48em){
+    .vpadding-10--sm{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .vpadding-20--sm{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .vpadding-30--sm{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .vpadding-40--sm{
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
-    .no-mg--xs{
-        margin: 0;
+    .no-pd--sm{
+        padding: 0;
     }
     
-    .no-mg-top--xs{
-        margin-top: 0;
+    .no-pd-top--sm{
+        padding-top: 0;
     }
     
-    .no-mg-bottom--xs{
-        margin-bottom: 0;
+    .no-pd-bottom--sm{
+        padding-bottom: 0;
     }
     
-    .no-mg-left--xs{
-        margin-left: 0;
+    .no-pd-left--sm{
+        padding-left: 0;
     }
     
-    .no-mg-right--xs{
-        margin-right: 0;
+    .no-pd-right--sm{
+        padding-right: 0;
+    }
+}
+
+.h-misc{
+    display: inline-block;
+    height: 1px;
+    background-color: #333b97;
+    vertical-align: middle;
+    margin-left: 10px;
+    width: 50px;
+}
+
+.v-misc{
+    border-left: 1px solid $primary;
+    height: 50px;
+}
+
+.relative{
+    position: relative;
+}
+
+.inline-block--xs{
+    display: inline-block;
+}
+
+.block--xs{
+    display: block;
+}
+
+.inline--xs{
+    display: inline;
+}
+
+//For dektop only
+@media only screen and (min-width: 75em){
+    .inline-block--lg{
+        display: inline-block;
+    }
+    
+    .block--lg{
+        display: block;
+    }
+    
+    .inline--lg{
+        display: inline;
+    }
+}
+
+//For tablets only
+@media only screen and (min-width: 48em){
+    .inline-block--sm{
+        display: inline-block;
+    }
+    
+    .block--sm{
+        display: block;
+    }
+    
+    .inline--sm{
+        display: inline;
     }
 }
