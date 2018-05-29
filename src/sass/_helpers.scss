@@ -1,3 +1,4 @@
+//Aligners
 .text-right--xs{
     text-align: right;
 }
@@ -10,6 +11,19 @@
     text-align: left;
 }
 
+.valign--top{
+    vertical-align: top;
+}
+
+.valign--middle{
+    vertical-align: middle;
+}
+
+.valign--bottom{
+    vertical-align: bottom;
+}
+
+//Margin separators
 .vmargin-10--xs{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -160,6 +174,7 @@
     }
 }
 
+//Padding separators
 .vpadding-10--xs{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -178,6 +193,26 @@
 .vpadding-40--xs{
     padding-top: 40px;
     padding-bottom: 40px;
+}
+
+.hpadding-10--xs{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.hpadding-20--xs{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.hpadding-30--xs{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.hpadding-40--xs{
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .no-pd--xs{
@@ -222,6 +257,26 @@
         padding-bottom: 40px;
     }
 
+    .hpadding-10--lg{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .hpadding-20--lg{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .hpadding-30--lg{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .hpadding-40--lg{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
     .no-pd--lg{
         padding: 0;
     }
@@ -263,6 +318,26 @@
     .vpadding-40--sm{
         padding-top: 40px;
         padding-bottom: 40px;
+    }
+
+    .hpadding-10--sm{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .hpadding-20--sm{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .hpadding-30--sm{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .hpadding-40--sm{
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     .no-pd--sm{
@@ -320,6 +395,7 @@
 @media only screen and (min-width: 75em){
     .inline-block--lg{
         display: inline-block;
+        vertical-align: middle;
     }
     
     .block--lg{
@@ -335,6 +411,7 @@
 @media only screen and (min-width: 48em){
     .inline-block--sm{
         display: inline-block;
+        vertical-align: middle;
     }
     
     .block--sm{
