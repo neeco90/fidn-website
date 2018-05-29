@@ -6,19 +6,20 @@
     width: 100%;
     font-size: .9rem;
     font-family: 'nunito-regular', sans-serif;
+    text-align: center;
     cursor: pointer;
     @include all-ease;
 
     &--primary{
         color: $tertiary;
-        background: rgba(81,88,209,1);
-        background: -moz-linear-gradient(left, rgba(81,88,209,1) 0%, rgba(51,60,136,1) 100%);
-        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(81,88,209,1)), color-stop(100%, rgba(51,60,136,1)));
-        background: -webkit-linear-gradient(left, rgba(81,88,209,1) 0%, rgba(51,60,136,1) 100%);
-        background: -o-linear-gradient(left, rgba(81,88,209,1) 0%, rgba(51,60,136,1) 100%);
-        background: -ms-linear-gradient(left, rgba(81,88,209,1) 0%, rgba(51,60,136,1) 100%);
-        background: linear-gradient(to right, rgba(81,88,209,1) 0%, rgba(51,60,136,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5158d1', endColorstr='#333c88', GradientType=1 );
+        background: $gradient-primary-start;
+        background: -moz-linear-gradient(left, $gradient-primary-start 0%, $gradient-primary-end 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, $gradient-primary-start), color-stop(100%, $gradient-primary-end));
+        background: -webkit-linear-gradient(left, $gradient-primary-start 0%, $gradient-primary-end 100%);
+        background: -o-linear-gradient(left, $gradient-primary-start 0%, $gradient-primary-end 100%);
+        background: -ms-linear-gradient(left, $gradient-primary-start 0%, $gradient-primary-end 100%);
+        background: linear-gradient(to right, $gradient-primary-start 0%, $gradient-primary-end 100%);
+        display: block;
 
         &:hover{
             background: $tertiary;

@@ -9,6 +9,8 @@
         border: 1px solid $secondary;
         padding: 20px;
         margin: 0 10px;
+        cursor: pointer;
+        transition: all ease .3s;
 
         &:hover{
             background: $gradient-secondary-start;
@@ -19,6 +21,18 @@
             background: -ms-linear-gradient(left, $gradient-secondary-start 0%, $gradient-secondary-end 100%);
             background: linear-gradient(to right, $gradient-secondary-start 0%, $gradient-secondary-end 100%);
             border-color: transparent;
+            transform: scale(1.02);
+        }
+
+        .btn--primary:hover{
+            color: $tertiary;
+            background: $gradient-primary-start;
+            background: -moz-linear-gradient(left, $gradient-primary-start 0%, $gradient-primary-end 100%);
+            background: -webkit-gradient(left top, right top, color-stop(0%, $gradient-primary-start), color-stop(100%, $gradient-primary-end));
+            background: -webkit-linear-gradient(left, $gradient-primary-start 0%, $gradient-primary-end 100%);
+            background: -o-linear-gradient(left, $gradient-primary-start 0%, $gradient-primary-end 100%);
+            background: -ms-linear-gradient(left, $gradient-primary-start 0%, $gradient-primary-end 100%);
+            background: linear-gradient(to right, $gradient-primary-start 0%, $gradient-primary-end 100%);
         }
     }
 }

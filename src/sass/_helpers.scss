@@ -361,22 +361,9 @@
     }
 }
 
-.h-misc{
-    display: inline-block;
-    height: 1px;
-    background-color: #333b97;
-    vertical-align: middle;
-    margin-left: 10px;
-    width: 50px;
-}
-
-.v-misc{
-    border-left: 1px solid $primary;
-    height: 50px;
-}
-
-.relative{
-    position: relative;
+//Hide or show elements on responsive
+.hide--xs{
+    display: none;
 }
 
 .inline-block--xs{
@@ -393,6 +380,10 @@
 
 //For dektop only
 @media only screen and (min-width: 75em){
+    .hide--lg{
+        display: none;
+    }
+
     .inline-block--lg{
         display: inline-block;
         vertical-align: middle;
@@ -409,6 +400,10 @@
 
 //For tablets only
 @media only screen and (min-width: 48em){
+    .hide--sm{
+        display: none;
+    }
+
     .inline-block--sm{
         display: inline-block;
         vertical-align: middle;
@@ -421,4 +416,22 @@
     .inline--sm{
         display: inline;
     }
+}
+
+.h-misc{
+    display: inline-block;
+    height: 1px;
+    background-color: #333b97;
+    vertical-align: middle;
+    margin-left: 10px;
+    width: 50px;
+}
+
+.v-misc{
+    border-left: 1px solid $primary;
+    height: 50px;
+}
+
+.relative{
+    position: relative;
 }

@@ -36,6 +36,7 @@
                 border-radius: 20px;
                 border: 1px solid $secondary;
                 padding: 5px 15px;
+                width: 180px;
             }
 
             &.active{
@@ -79,11 +80,6 @@
             .navbar{
                 &__menu{
                     &__item{
-                        display: inline-block;
-                        padding: 0 20px;
-                        text-align: center;
-                        position: relative;
-            
                         &:hover{
                             &>a{
                                 color: $tertiary;
@@ -91,39 +87,23 @@
                         }
             
                         a{
-                            text-decoration: none;
                             color: $secondary;
-                            font-size: 1.2rem;
-                            padding-bottom: 3px;
-                            transition: all ease .5s;
-                            display: block;
                         }
             
                         #linkMaimonides{
-                            border-radius: 20px;
                             border: 1px solid $secondary;
-                            padding: 5px 15px;
                         }
             
                         &.active{
                             a{
                                 color: white;
-                                border-bottom: 3px solid $tertiary;
                             }
                         }
                     }
                 }
 
                 &__submenu{        
-                    &__item{
-                        width: 100%;            
-                        text-align: left;                    
-            
-                        a{
-                            transition: all ease .5s;
-                            padding: 10px 25px;
-                        }
-            
+                    &__item{            
                         &:hover{
                             a{
                                 color: $tertiary;
@@ -167,6 +147,65 @@
             &:hover{
                 a{
                     color: $tertiary;
+                }
+            }
+        }
+    }
+
+    &-mobile{
+        padding: 20px 40px;
+        background-color: $primary;
+        -webkit-box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.3);
+        -moz-box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.3);
+        box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.3);
+
+        &__trigger{
+            font-size: 3rem;
+            color: white;
+        }
+
+        &__sidemenu{
+            display: none;
+            background-color: $primary;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 90%;
+            min-height: 100%;
+
+            &.open{
+                display: block;
+            }
+
+            &__item{
+                display: inline-block;
+                padding: 0 20px;
+                text-align: center;
+                position: relative;
+
+                &:hover{
+                    &>a{
+                        color: $tertiary;
+                    }
+                }
+    
+                a{
+                    text-decoration: none;
+                    color: $secondary;
+                    font-size: 1.2rem;
+                    padding-bottom: 3px;
+                    transition: all ease .5s;
+                    display: block;
+                }
+    
+                #linkMaimonides{
+                    border: 1px solid $secondary;
+                }
+    
+                &.active{
+                    a{
+                        color: white;
+                    }
                 }
             }
         }
