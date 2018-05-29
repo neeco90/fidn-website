@@ -9,5 +9,16 @@
         border: 1px solid $secondary;
         padding: 20px;
         margin: 0 10px;
+
+        &:hover{
+            background: $gradient-secondary-start;
+            background: -moz-linear-gradient(left, $gradient-secondary-start 0%, $gradient-secondary-end 100%);
+            background: -webkit-gradient(left top, right top, color-stop(0%, $gradient-secondary-start), color-stop(100%, $gradient-secondary-end));
+            background: -webkit-linear-gradient(left, $gradient-secondary-start 0%, $gradient-secondary-end 100%);
+            background: -o-linear-gradient(left, $gradient-secondary-start 0%, $gradient-secondary-end 100%);
+            background: -ms-linear-gradient(left, $gradient-secondary-start 0%, $gradient-secondary-end 100%);
+            background: linear-gradient(to right, $gradient-secondary-start 0%, $gradient-secondary-end 100%);
+            border-color: transparent;
+        }
     }
 }

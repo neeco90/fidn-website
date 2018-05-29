@@ -1,5 +1,14 @@
 .navbar{
     padding: 20px 40px;
+    background-color: white;
+
+    img[data-condition="showOnStick"]{
+        display: none;
+    }
+
+    img[data-condition="hideOnStick"]{
+        display: block;
+    }
 
     &__menu{
         &__item{
@@ -32,6 +41,95 @@
             &.active{
                 a{
                     border-bottom: 3px solid $tertiary;
+                }
+            }
+        }
+    }
+
+    .row{
+        transition: padding ease .5s;
+
+        &.stuck {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            left: 0;
+            right: 0;
+            padding: 20px 40px;
+            z-index: 8;
+            background: $gradient-primary-start;
+            background: -moz-linear-gradient(left, $gradient-primary-start 0%, $gradient-primary-end 100%);
+            background: -webkit-gradient(left top, right top, color-stop(0%, $gradient-primary-start), color-stop(100%, $gradient-primary-end));
+            background: -webkit-linear-gradient(left, $gradient-primary-start 0%, $gradient-primary-end 100%);
+            background: -o-linear-gradient(left, $gradient-primary-start 0%, $gradient-primary-end 100%);
+            background: -ms-linear-gradient(left, $gradient-primary-start 0%, $gradient-primary-end 100%);
+            background: linear-gradient(to right, $gradient-primary-start 0%, $gradient-primary-end 100%);
+            -webkit-box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.3);
+            -moz-box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.3);
+            box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.3);
+
+            img[data-condition="showOnStick"]{
+                display: block;
+            }
+
+            img[data-condition="hideOnStick"]{
+                display: none;
+            }
+
+            .navbar{
+                &__menu{
+                    &__item{
+                        display: inline-block;
+                        padding: 0 20px;
+                        text-align: center;
+                        position: relative;
+            
+                        &:hover{
+                            &>a{
+                                color: $tertiary;
+                            }
+                        }
+            
+                        a{
+                            text-decoration: none;
+                            color: $secondary;
+                            font-size: 1.2rem;
+                            padding-bottom: 3px;
+                            transition: all ease .5s;
+                            display: block;
+                        }
+            
+                        #linkMaimonides{
+                            border-radius: 20px;
+                            border: 1px solid $secondary;
+                            padding: 5px 15px;
+                        }
+            
+                        &.active{
+                            a{
+                                color: white;
+                                border-bottom: 3px solid $tertiary;
+                            }
+                        }
+                    }
+                }
+
+                &__submenu{        
+                    &__item{
+                        width: 100%;            
+                        text-align: left;                    
+            
+                        a{
+                            transition: all ease .5s;
+                            padding: 10px 25px;
+                        }
+            
+                        &:hover{
+                            a{
+                                color: $tertiary;
+                            }
+                        }
+                    }
                 }
             }
         }

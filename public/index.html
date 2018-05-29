@@ -12,6 +12,8 @@
     
     <!-- Scripts -->
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/sticky.min.js"></script>
     <script src="js/main.js"></script>
 
     <title>Home</title>
@@ -20,7 +22,8 @@
     <nav class="navbar">
         <div class="row middle-xs">
             <div class="col-lg-3">
-                <img src="assets/img/logo-02_apaisado.svg" alt="">
+                <img class="img--full" src="assets/img/logo-02_apaisado.svg" alt="" data-condition="hideOnStick">
+                <img class="img--full" src="assets/img/logo-03_apaisado_blanco.svg" alt="" data-condition="showOnStick">
             </div>
             <div class="col-lg-9 navbar__menu">
                 <ul class="row middle-xs end-xs">
@@ -42,7 +45,7 @@
             </div>
         </div>
     </nav>
-    <div class="container">
+    <div id="content" class="container">
         <div class="row">
             <div class="col-lg-4">
                 <img src="assets/img/logo-01.svg" alt="Fundación Internacional para el Desarrollo de las Neurociencias" class="img--full">
