@@ -30,7 +30,7 @@
                 <ul class="row middle-xs end-xs">
                     <li class="navbar__menu__item active"><a href="">Inicio</a></li>
                     <li class="navbar__menu__item"><a href="">Quiénes somos</a></li>
-                    <li id="docencia" class="navbar__menu__item"><a href="">Docencia</a>
+                    <li id="docencia" class="navbar__menu__item"><span>Docencia</span>
                         <div id="submenu">
                             <ul class="navbar__submenu">
                                 <li class="navbar__submenu__item"><a href="">Oferta académica</a></li>
@@ -47,11 +47,25 @@
         </div>
     </nav>
     <nav class="navbar-mobile hide--lg">
-        <a class="navbar-mobile__trigger" onclick="openSideMenu();"><i class="fas fa-bars"></i></a>
+        <a class="navbar-mobile__trigger" onclick="toggleSideMenu();"><i class="fas fa-bars"></i></a>
         <div class="navbar-mobile__sidemenu">
-            <ul>
-                <li class="navbar-mobile__sidemenu__item"><a href="">Home</a></li>
+            <a class="navbar-mobile__trigger" onclick="toggleSideMenu();"><i class="fas fa-times"></i></a>
+            <ul class="vmargin-40--xs">
+                <li class="navbar-mobile__sidemenu__item active"><a href="">Inicio</a></li>
+                <li class="navbar-mobile__sidemenu__item"><a href="">Quiénes somos</a></li>
+                <li class="navbar-mobile__sidemenu__item" id="docenciaMobile" onclick="toggleSubmenuMobile();"><span>Docencia</span>
+                    <div id="submenuMobile">
+                        <ul class="navbar__submenu">
+                            <li class="navbar__submenu__item"><a href="">Oferta académica</a></li>
+                            <li class="navbar__submenu__item"><a href="">Eventos y actividades</a></li>
+                            <li class="navbar__submenu__item"><a href="">Enlaces</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navbar-mobile__sidemenu__item"><a href="">Investigación</a></li>
+                <li class="navbar-mobile__sidemenu__item"><a href="">Contacto</a></li>
             </ul>
+            <a href="" id="linkMaimonides"><img src="assets/img/logo_maimonides_lila.png" alt="Universidad Maimónides"></a>
         </div>
     </nav>
     <div id="content" class="container hide--xs block--lg">
@@ -135,10 +149,10 @@
             </div>
         </div>
     </div>
-    <footer class="footer hide--xs block--lg">
+    <footer class="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
+            <div class="row no-mg--xs">
+                <div class="col-xs-12 vpadding-10--xs no-pd--lg hpadding-40--xs col-lg-3">
                     <div class="inline-block--xs valign--top col-xs-4">
                         <a href="" class="footer__icon"><img src="assets/img/map.svg" alt="" class="footer__icon__img"></a>
                     </div>
@@ -147,7 +161,7 @@
                         <p class="text-soft">Piso 3° dto A <br>Buenos Aires, Argentina</p>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-xs-12 vpadding-10--xs no-pd--lg hpadding-40--xs col-lg-3">
                     <div class="inline-block--xs valign--top col-xs-4">
                         <a href="" class="footer__icon"><img src="assets/img/phone.svg" alt="" class="footer__icon__img"></a>
                     </div>
@@ -155,7 +169,7 @@
                         <p>(+5411)4555-5555</p>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-xs-12 vpadding-10--xs no-pd--lg hpadding-40--xs col-lg-3">
                     <div class="inline-block--xs valign--top col-xs-4">
                         <a href="" class="footer__icon"><img src="assets/img/mail.svg" alt="" class="footer__icon__img"></a>
                     </div>
@@ -164,7 +178,7 @@
                         <p class="text-soft">Podés dejarons un mensaje completando tus datos →</p>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-xs-12 vpadding-10--xs no-pd--lg hpadding-40--xs col-lg-3">
                     <div class="inline-block--xs valign--top col-xs-4">
                         <a href="" class="footer__icon"><img src="assets/img/facebook.svg" alt="" class="footer__icon__img"></a>
                     </div>
