@@ -1,6 +1,12 @@
 .news{
-    //margin-top: -50px;
     margin-top: 50px;
     z-index: 2;
     position: absolute;
+}
+
+//For mobile only
+@media only screen and (max-width: 47em){
+    .news {
+        position: relative;
+    }
 }
