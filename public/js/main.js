@@ -40,7 +40,13 @@ $(document).ready(function(){
         submenu.removeClass("open");
     });
 
-    var sticky = new Waypoint.Sticky({
-        element: $('.navbar .row')[0]
-    });
+    if(screen.width <= 450){
+        var sticky = new Waypoint.Sticky({
+            element: $('.navbar-mobile .row')[0]
+        });
+    } else{
+        var sticky = new Waypoint.Sticky({
+            element: $('.navbar .row')[0]
+        });
+    }
 })

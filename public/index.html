@@ -47,25 +47,27 @@
         </div>
     </nav>
     <nav class="navbar-mobile hide--lg">
-        <a class="navbar-mobile__trigger" onclick="toggleSideMenu();"><i class="fas fa-bars"></i></a>
-        <div class="navbar-mobile__sidemenu">
-            <a class="navbar-mobile__trigger" onclick="toggleSideMenu();"><i class="fas fa-times"></i></a>
-            <ul class="vmargin-40--xs">
-                <li class="navbar-mobile__sidemenu__item active"><a href="">Inicio</a></li>
-                <li class="navbar-mobile__sidemenu__item"><a href="">Quiénes somos</a></li>
-                <li class="navbar-mobile__sidemenu__item" id="docenciaMobile" onclick="toggleSubmenuMobile();"><span>Docencia</span>
-                    <div id="submenuMobile">
-                        <ul class="navbar__submenu">
-                            <li class="navbar__submenu__item"><a href="">Oferta académica</a></li>
-                            <li class="navbar__submenu__item"><a href="">Eventos y actividades</a></li>
-                            <li class="navbar__submenu__item"><a href="">Enlaces</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="navbar-mobile__sidemenu__item"><a href="">Investigación</a></li>
-                <li class="navbar-mobile__sidemenu__item"><a href="">Contacto</a></li>
-            </ul>
-            <a href="" id="linkMaimonides"><img src="assets/img/logo_maimonides_lila.png" alt="Universidad Maimónides"></a>
+        <div class="row">
+            <a class="navbar-mobile__trigger" onclick="toggleSideMenu();"><i class="fas fa-bars"></i></a>
+            <div class="navbar-mobile__sidemenu">
+                <a class="navbar-mobile__trigger" onclick="toggleSideMenu();"><i class="fas fa-times"></i></a>
+                <ul class="vmargin-40--xs">
+                    <li class="navbar-mobile__sidemenu__item active"><a href="">Inicio</a></li>
+                    <li class="navbar-mobile__sidemenu__item"><a href="">Quiénes somos</a></li>
+                    <li class="navbar-mobile__sidemenu__item" id="docenciaMobile" onclick="toggleSubmenuMobile();"><span>Docencia</span>
+                        <div id="submenuMobile">
+                            <ul class="navbar__submenu">
+                                <li class="navbar__submenu__item"><a href="">Oferta académica</a></li>
+                                <li class="navbar__submenu__item"><a href="">Eventos y actividades</a></li>
+                                <li class="navbar__submenu__item"><a href="">Enlaces</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navbar-mobile__sidemenu__item"><a href="">Investigación</a></li>
+                    <li class="navbar-mobile__sidemenu__item"><a href="">Contacto</a></li>
+                </ul>
+                <a href="" id="linkMaimonides"><img src="assets/img/logo_maimonides_lila.png" alt="Universidad Maimónides"></a>
+            </div>
         </div>
     </nav>
     <div id="content" class="container">
