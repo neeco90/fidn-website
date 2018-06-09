@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/flexboxgrid.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Scripts -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/sticky.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <title>Home</title>
+</head>
+<body id="us">
+    <div id="usbkg" class="bkgheader"></div>
+    <nav class="navbar hide--xs block--lg">
+        <div class="row middle-xs">
+            <div class="col-lg-3">
+                <img class="img--full" src="assets/img/logo-03_apaisado_blanco.svg" alt="" data-condition="hideOnStick">
+                <img class="img--full" src="assets/img/logo-03_apaisado_blanco.svg" alt="" data-condition="showOnStick">
+            </div>
+            <div class="col-lg-9 navbar__menu">
+                <ul class="row middle-xs end-xs">
+                    <li class="navbar__menu__item"><a href="index.html">Inicio</a></li>
+                    <li class="navbar__menu__item active"><a href="">Quiénes somos</a></li>
+                    <li id="docencia" class="navbar__menu__item"><span>Docencia</span>
+                        <div id="submenu">
+                            <ul class="navbar__submenu">
+                                <li class="navbar__submenu__item"><a href="">Oferta académica</a></li>
+                                <li class="navbar__submenu__item"><a href="">Eventos y actividades</a></li>
+                                <li class="navbar__submenu__item"><a href="">Enlaces</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navbar__menu__item"><a href="">Investigación</a></li>
+                    <li class="navbar__menu__item"><a href="">Contacto</a></li>
+                    <li class="navbar__menu__item"><a href=""><img src="assets/img/logo_maimonides_lila.png" id="linkMaimonides" alt="Universidad Maimónides"></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar-mobile hide--lg">
+        <div class="row">
+            <a class="navbar-mobile__trigger" onclick="toggleSideMenu();"><i class="fas fa-bars"></i></a>
+            <div class="navbar-mobile__sidemenu">
+                <a class="navbar-mobile__trigger" onclick="toggleSideMenu();"><i class="fas fa-times"></i></a>
+                <ul class="vmargin-40--xs">
+                    <li class="navbar-mobile__sidemenu__item active"><a href="index.html">Inicio</a></li>
+                    <li class="navbar-mobile__sidemenu__item"><a href="">Quiénes somos</a></li>
+                    <li class="navbar-mobile__sidemenu__item" id="docenciaMobile" onclick="toggleSubmenuMobile();"><span>Docencia</span>
+                        <div id="submenuMobile">
+                            <ul class="navbar__submenu">
+                                <li class="navbar__submenu__item"><a href="">Oferta académica</a></li>
+                                <li class="navbar__submenu__item"><a href="">Eventos y actividades</a></li>
+                                <li class="navbar__submenu__item"><a href="">Enlaces</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navbar-mobile__sidemenu__item"><a href="">Investigación</a></li>
+                    <li class="navbar-mobile__sidemenu__item"><a href="">Contacto</a></li>
+                </ul>
+                <a href="" id="linkMaimonides"><img src="assets/img/logo_maimonides_lila.png" alt="Universidad Maimónides"></a>
+            </div>
+        </div>
+    </nav>
+    <div id="content" class="container">
+        <div class="row">
+            <div class="col-xs-12 vmargin-30--lg vpadding-40--lg no-pd-bottom--lg">
+                <h1 class="text-white">Quiénes somos, visión y misión.</h1>
+            </div>
+            <div class="col-lg-3 bkg-white vpadding-20--xs hpadding-20--xs">
+                <p class="headline vpadding-10--xs no-pd-top--xs">En esta página</p>
+                <ul>
+                    <li class="vpadding-10--xs no-pd-top--xs"><h4>Visión y misión</h4></li>
+                    <li class="vpadding-10--xs no-pd-top--xs"><h4>Autoridades e integrantes</h4></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row vpadding-20--lg center-xs">
+            <div class="col-xs-6">
+                <span class="v-misc"></span>
+            </div>
+        </div>
+        <div class="row center-xs vmargin-30--xs no-mg-top--xs">
+            <div class="col-xs-12">
+                <h2 class="nunito-bold">Visión y misión</h2>
+            </div>
+            <div class="col-lg-8 vpadding-20--lg">
+                <h3>
+                    FIDN es una organización sin fines de lucro cuyo propósito es 
+                    impulsar la <strong>investigación, divulgación, capacitación y aplicación
+                    práctica</strong> de las ciencias en las áreas del conocimiento vinculadas
+                    a las neurociencias, a nivel nacional e internacional.
+                </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="row">
+                    <div class="col-lg-6 hpadding-30--lg">
+                        <p class="text-soft">
+                            <strong>Nuestra misión:</strong> estimular y fomentar el desarrollo 
+                            científico y académico en el campo de las neurociencias 
+                            y su aplicación en la salud mental, contribuyendo así 
+                            al progreso de la ciencia y al bienestar de toda la 
+                            comunidad mediante el apoyo a la investigación científica, 
+                            la formación académica y cultural de profesionales 
+                            altamente calificados, con responsabilidad ética y 
+                            sensibilidad humana.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 hpadding-30--lg">
+                        <p class="text-soft">
+                            <strong>Nuestra visión:</strong> constituirnos en un 
+                            referente de excelencia en el desarrollo científico 
+                            y académico en el campo de la salud mental y las 
+                            neurociencias, en nuestro país y en el mundo entero, 
+                            contribuyendo al progreso y al desarrollo de toda 
+                            la sociedad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row vmargin-40--xs vpadding-40--xs no-mg-bottom--xs no-pd-bottom--xs middle-xs">
+            <span class="h-misc hmargin-20--xs no-mg-left--xs"></span>
+            <p class="headline">Autoridades e integrantes</p>
+        </div>
+        <div class="row vmargin-20--xs">
+            <div class="col-xs-12">
+                <h2 class="nunito-bold">Quiénes conformamos FIDN</h2>
+            </div>
+        </div>
+        <div class="row vmargin-40--xs">
+            <div class="col-lg-3">
+                <div class="row">
+                    <div class="col-xs-12 vmargin-20--xs no-mg-top--xs">
+                        <h3 class="nunito-semibold vmargin-10--xs no-mg-top--xs">Autoridades</h3>
+                        <p class="text-soft headline">Presidente</p>
+                        <p class="text-soft vmargin-10--xs no-mg-top--xs">Prof. Dr. Gustavo Tafet</p>
+                        <p class="text-soft headline">Secretario</p>
+                        <p class="text-soft vmargin-10--xs no-mg-top--xs">Dr. Diego J. Feder</p>
+                        <p class="text-soft headline">Tesorero</p>
+                        <p class="text-soft">Sr. Carlos Rattoballi</p>
+                    </div>
+                    <div class="col-xs-12">
+                        <h3 class="nunito-semibold vmargin-10--xs no-mg-top--xs">Vocales</h3>
+                        <p class="text-soft">Dr. Javier Naveros</p>
+                        <p class="text-soft">Dra. Silvia Rajchenberg</p>
+                        <p class="text-soft">Lic. Tamara G. Tafet</p>
+                        <p class="text-soft">Sr. Alan Tafet</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3 class="nunito-extralight vmargin-10--xs no-mg-top--xs"><strong>Comité Internacional</strong><br>International Board</h3>
+                        <p class="text-soft">Dr. Tomás Ortíz Alonso</p>
+                        <p class="text-soft note vmargin-10--xs no-mg-top--xs">España</p>
+                        <p class="text-soft">Dr. Renato Bernardini</p>
+                        <p class="text-soft note vmargin-10--xs no-mg-top--xs">Italia</p>
+                        <p class="text-soft">Dr. Miguel Angel Cedeño Tello</p>
+                        <p class="text-soft note vmargin-10--xs no-mg-top--xs">Panamá</p>
+                        <p class="text-soft">Dr. Carlos Virto Concha</p>
+                        <p class="text-soft note vmargin-10--xs no-mg-top--xs">Perú</p>
+                        <p class="text-soft">Dra. Margarita María Dubourdieu </p>
+                        <p class="text-soft note vmargin-10--xs no-mg-top--xs">Uruguay</p>
+                        <p class="text-soft">Dr. Eduardo Yosef Kleiner</p>
+                        <p class="text-soft note vmargin-10--xs no-mg-top--xs">Israel</p>
+                        <p class="text-soft">Dr. Juan Matías Santos García</p>
+                        <p class="text-soft note vmargin-10--xs no-mg-top--xs">España</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3 class="nunito-extralight vmargin-10--xs no-mg-top--xs"><strong>Comité Nacional</strong><br>National Board</h3>
+                        <p class="text-soft">Dra. Claudia Bavec</p>
+                        <p class="text-soft note vmargin-10--xs no-mg-top--xs">Argentina</p>
+                        <p class="text-soft">Dr. Eric Harry Wainwright</p>
+                        <p class="text-soft note vmargin-10--xs no-mg-top--xs">Argentina</p>
+                        <p class="text-soft">Dr. Roberto Sivak</p>
+                        <p class="text-soft note vmargin-10--xs no-mg-top--xs">Argentina</p>
+                        <p class="text-soft">Dr. Mauricio Battafarano</p>
+                        <p class="text-soft note vmargin-10--xs no-mg-top--xs">Argentina</p>
+                        <p class="text-soft">Dr.  Mariano Furman</p>
+                        <p class="text-soft note vmargin-10--xs no-mg-top--xs">Argentina</p>
+                        <p class="text-soft">Dr. Martin Furman</p>
+                        <p class="text-soft note vmargin-10--xs no-mg-top--xs">Argentina</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3 class="nunito-extralight vmargin-10--xs no-mg-top--xs"><strong>Comité de Honor</strong><br>Honorary Board</h3>
+                        <p class="text-soft">Prof. Charles Nemeroff</p>
+                        <p class="text-soft note vmargin-10--xs no-mg-top--xs">University of Miami, USA</p>
+                        <p class="text-soft">Prof. Alan Schatzberg</p>
+                        <p class="text-soft note vmargin-10--xs no-mg-top--xs">University of Stanford, USA</p>
+                        <p class="text-soft">Prof. Ned Kalin</p>
+                        <p class="text-soft note vmargin-10--xs no-mg-top--xs">Universitiy of Wisconsin, USA</p>
+                        <p class="text-soft">Prof. Francisco Alonso Fernández</p>
+                        <p class="text-soft note vmargin-10--xs no-mg-top--xs">Universidad Complutense de Madrid, España</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row no-mg--xs">
+                <div class="col-xs-12 vpadding-10--xs no-pd--lg hpadding-40--xs col-lg-3">
+                    <div class="inline-block--xs valign--top col-xs-4">
+                        <a href="" class="footer__icon"><img src="assets/img/map.svg" alt="" class="footer__icon__img"></a>
+                    </div>
+                    <div class="inline-block--xs valign--top col-xs-8">
+                        <p>Zabala 1739</p>
+                        <p class="text-soft">Piso 3° dto A <br>Buenos Aires, Argentina</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 vpadding-10--xs no-pd--lg hpadding-40--xs col-lg-3">
+                    <div class="inline-block--xs valign--top col-xs-4">
+                        <a href="" class="footer__icon"><img src="assets/img/phone.svg" alt="" class="footer__icon__img"></a>
+                    </div>
+                    <div class="inline-block--xs valign--top col-xs-8">
+                        <p>(+5411)4555-5555</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 vpadding-10--xs no-pd--lg hpadding-40--xs col-lg-3">
+                    <div class="inline-block--xs valign--top col-xs-4">
+                        <a href="" class="footer__icon"><img src="assets/img/mail.svg" alt="" class="footer__icon__img"></a>
+                    </div>
+                    <div class="inline-block--xs valign--top col-xs-8">
+                        <p>info@fidn.org</p>
+                        <p class="text-soft">Podés dejarons un mensaje completando tus datos →</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 vpadding-10--xs no-pd--lg hpadding-40--xs col-lg-3">
+                    <div class="inline-block--xs valign--top col-xs-4">
+                        <a href="" class="footer__icon"><img src="assets/img/facebook.svg" alt="" class="footer__icon__img"></a>
+                    </div>
+                    <div class="inline-block--xs valign--top col-xs-8">
+                        <p>Departamento de Psiquiatría y Neurociencias de la Universidad Maimónides →</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

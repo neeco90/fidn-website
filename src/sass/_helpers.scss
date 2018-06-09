@@ -44,6 +44,26 @@
     margin-bottom: 40px;
 }
 
+.hmargin-10--xs{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.hmargin-20--xs{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.hmargin-30--xs{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.hmargin-40--xs{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
 .no-mg--xs{
     margin: 0;
 }
@@ -96,6 +116,26 @@
     .vmargin-40--lg{
         margin-top: 40px;
         margin-bottom: 40px;
+    }
+
+    .hmargin-10--lg{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .hmargin-20--lg{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .hmargin-30--lg{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    .hmargin-40--lg{
+        margin-left: 40px;
+        margin-right: 40px;
     }
 
     .no-mg--lg{
@@ -151,6 +191,26 @@
     .vmargin-40--sm{
         margin-top: 40px;
         margin-bottom: 40px;
+    }
+
+    .hmargin-10--sm{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .hmargin-20--sm{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .hmargin-30--sm{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    .hmargin-40--sm{
+        margin-left: 40px;
+        margin-right: 40px;
     }
 
     .no-mg--sm{
@@ -428,8 +488,9 @@
 }
 
 .v-misc{
-    border-left: 1px solid $primary;
-    height: 50px;
+    border-right: 1px solid $primary;
+    height: 70px;
+    display: inline-block;
 }
 
 .relative{

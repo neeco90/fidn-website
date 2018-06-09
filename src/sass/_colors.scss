@@ -25,3 +25,19 @@ $gradient-secondary-end: $tertiary;
 .text-soft{
     opacity: .5;
 }
+
+.bkg-primary{
+    background-color: $primary;
+}
+
+.bkg-secondary{
+    background-color: $secondary;
+}
+
+.bkg-tertiary{
+    background-color: $tertiary;
+}
+
+.bkg-white{
+    background-color: white;
+}

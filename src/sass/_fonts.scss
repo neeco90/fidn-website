@@ -34,7 +34,7 @@
 }
 
 html{
-    font-size: 12px;
+    font-size: 13px;
 }
 
 body{
@@ -71,15 +71,16 @@ body{
 }
 
 h1{
-    font-size: 1rem;
+    font-size: 3.3rem;
 }
 
 h2{
-    font-size: 1rem;
+    font-size: 2.5rem;
 }
 
 h3{
-    font-size: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
 }
 
 h4{
@@ -91,8 +92,16 @@ p{
     line-height: 1.5;
 }
 
+strong{
+    font-family: 'nunito-bold', sans-serif;
+}
+
 .headline{
     font-size: .8rem;
     letter-spacing: 1.5pt;
     text-transform: uppercase;
+}
+
+.note{
+    font-size: .8rem;
 }

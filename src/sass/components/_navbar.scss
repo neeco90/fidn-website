@@ -1,6 +1,6 @@
 .navbar{
     padding: 20px 40px;
-    background-color: white;
+    background-color: transparent;
 
     img[data-condition="showOnStick"]{
         display: none;
@@ -269,4 +269,12 @@
     background-color: black;
     opacity: .5;
     min-height: 100%;
+}
+
+.bkgheader + .navbar{
+    .navbar__menu__item.active{
+        a{
+            color: white;
+        }
+    }
 }
