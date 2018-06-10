@@ -33,7 +33,7 @@
                 cursor: pointer;
             }
 
-            #linkMaimonides{
+            .linkMaimonides{
                 border-radius: 20px;
                 border: 1px solid $secondary;
                 padding: 5px 15px;
@@ -118,7 +118,7 @@
                             color: $secondary;
                         }
             
-                        #linkMaimonides{
+                        .linkMaimonides{
                             border: 1px solid $secondary;
                         }
             
@@ -248,7 +248,7 @@
                 }
             }
     
-            #linkMaimonides{
+            .linkMaimonides{
                 display: inline-block;
                 border-radius: 10px;
                 padding: 5px 15px;
@@ -271,10 +271,17 @@
     min-height: 100%;
 }
 
-.bkgheader + .navbar{
-    .navbar__menu__item.active{
-        a{
-            color: white;
+.bkgheader{
+    & + .navbar{
+        .navbar__menu__item.active{
+            a{
+                color: white;
+            }
+        }
+
+        & + .navbar-mobile{
+            background-color: transparent;
+            box-shadow: none;
         }
     }
 }

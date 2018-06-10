@@ -105,3 +105,14 @@ strong{
 .note{
     font-size: .8rem;
 }
+
+//For smartphones only
+@media only screen and (max-width: 540px){
+    p{
+        font-size: 1.3rem;
+    }
+
+    .headline{
+        font-size: 1rem;
+    }
+}
