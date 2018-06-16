@@ -21,6 +21,16 @@ function toggleSubmenuMobile(){
     }
 }
 
+function openModal(){
+    $('#bkgopacity, #modal').fadeIn();
+    $('body').css('overflow', 'hidden');
+}
+
+function closeModal(){
+    $('#bkgopacity, #modal').fadeOut();
+    $('body').css('overflow', 'auto');
+}
+
 $(document).ready(function(){
     var docencia = $(".navbar__menu #docencia");
     var submenu = $(".navbar__menu #submenu");

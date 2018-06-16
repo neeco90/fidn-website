@@ -1,0 +1,47 @@
+#bkgopacity{
+    position: fixed;
+    z-index: 98;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(#000000, .7);
+    display: none;
+    min-height: 100%;
+}
+
+.modal{
+    display: none;
+    background-color: white;
+    width: 60%;
+    left: 20%;
+    z-index: 99;
+    position: fixed;
+    top: 10%;
+
+    &__close{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+    }
+
+    &__container{
+        padding: 30px;
+        padding-top: 40px;
+        max-height: 500px;
+        overflow-y: auto;
+    }
+
+    &__footer{
+        height: 30px;
+        background-color: $secondary;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .modal{
+        width: 90%;
+        left: 5%;
+    }
+}

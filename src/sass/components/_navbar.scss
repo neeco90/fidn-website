@@ -41,7 +41,7 @@
             }
 
             &.active{
-                a, span{
+                &>a, &>span{
                     border-bottom: 3px solid $tertiary;
                 }
             }
@@ -123,7 +123,7 @@
                         }
             
                         &.active{
-                            a, span{
+                            &>a, &>span{
                                 color: white;
                             }
                         }
@@ -131,7 +131,11 @@
                 }
 
                 &__submenu{        
-                    &__item{            
+                    &__item{
+                        a, span{
+                            color: $secondary;
+                        }
+
                         &:hover{
                             a, span{
                                 color: $tertiary;
@@ -221,7 +225,7 @@
                 }
     
                 &.active{
-                    a, span{
+                    &>a, &>span{
                         color: $tertiary;
                     }
                 }
@@ -271,10 +275,20 @@
     min-height: 100%;
 }
 
-.bkgheader{
+.bkgheader{    
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+
     & + .navbar{
         .navbar__menu__item.active{
-            a{
+            &>a, &>span{
                 color: white;
             }
         }

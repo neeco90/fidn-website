@@ -17,7 +17,7 @@
     <script src="js/sticky.min.js"></script>
     <script src="js/main.js"></script>
 
-    <title>Home</title>
+    <title>FIDN - Home</title>
 </head>
 <body id="home">
     <nav class="navbar hide--xs block--lg">
@@ -33,15 +33,15 @@
                     <li id="docencia" class="navbar__menu__item"><span>Docencia</span>
                         <div id="submenu">
                             <ul class="navbar__submenu">
-                                <li class="navbar__submenu__item"><a href="">Oferta académica</a></li>
-                                <li class="navbar__submenu__item"><a href="">Eventos y actividades</a></li>
-                                <li class="navbar__submenu__item"><a href="">Enlaces</a></li>
+                                <li class="navbar__submenu__item"><a href="teaching.html#teaching">Oferta académica</a></li>
+                                <li class="navbar__submenu__item"><a href="teaching.html#events">Eventos y actividades</a></li>
+                                <li class="navbar__submenu__item"><a href="teaching.html#links">Enlaces</a></li>
                             </ul>
                         </div>
                     </li>
-                    <li class="navbar__menu__item"><a href="">Investigación</a></li>
-                    <li class="navbar__menu__item"><a href="">Contacto</a></li>
-                    <li class="navbar__menu__item"><a href=""><img src="assets/img/logo_maimonides_lila.png" id="linkMaimonides" alt="Universidad Maimónides"></a></li>
+                    <li class="navbar__menu__item"><a href="investigation.html">Investigación</a></li>
+                    <li class="navbar__menu__item"><a href="contact.html">Contacto</a></li>
+                    <li class="navbar__menu__item"><a href="https://www.maimonides.edu/" target="_blank"><img src="assets/img/logo_maimonides_lila.png" class="linkMaimonides" alt="Universidad Maimónides"></a></li>
                 </ul>
             </div>
         </div>
@@ -57,16 +57,16 @@
                     <li class="navbar-mobile__sidemenu__item" id="docenciaMobile" onclick="toggleSubmenuMobile();"><span>Docencia</span>
                         <div id="submenuMobile">
                             <ul class="navbar__submenu">
-                                <li class="navbar__submenu__item"><a href="">Oferta académica</a></li>
-                                <li class="navbar__submenu__item"><a href="">Eventos y actividades</a></li>
-                                <li class="navbar__submenu__item"><a href="">Enlaces</a></li>
+                                <li class="navbar__submenu__item"><a href="teaching.html#teaching">Oferta académica</a></li>
+                                <li class="navbar__submenu__item"><a href="teaching.html#events">Eventos y actividades</a></li>
+                                <li class="navbar__submenu__item"><a href="teaching.html#links">Enlaces</a></li>
                             </ul>
                         </div>
                     </li>
-                    <li class="navbar-mobile__sidemenu__item"><a href="">Investigación</a></li>
-                    <li class="navbar-mobile__sidemenu__item"><a href="">Contacto</a></li>
+                    <li class="navbar-mobile__sidemenu__item"><a href="investigation.html">Investigación</a></li>
+                    <li class="navbar-mobile__sidemenu__item"><a href="contact.html">Contacto</a></li>
                 </ul>
-                <a href="" id="linkMaimonides"><img src="assets/img/logo_maimonides_lila.png" alt="Universidad Maimónides"></a>
+                <a href="https://www.maimonides.edu/" target="_blank" class="linkMaimonides"><img src="assets/img/logo_maimonides_lila.png" alt="Universidad Maimónides"></a>
             </div>
         </div>
     </nav>
@@ -81,73 +81,79 @@
         </div>
         <div class="row news vpadding-40--xs no-pd-top--xs">
             <div class="col-lg-4">
-                <div class="card-news">
-                    <div class="row middle-xs vmargin-10--xs no-mg-top--xs">
-                        <div class="col-xs-12">
-                            <p class="headline text-primary vmargin-10--xs no-mg-top--xs">Institucional</p>
+                <a href="us.html">
+                    <div class="card-news">
+                        <div class="row middle-xs vmargin-10--xs no-mg-top--xs">
+                            <div class="col-xs-12">
+                                <p class="headline text-primary vmargin-10--xs no-mg-top--xs">Institucional</p>
+                            </div>
+                            <div class="col-xs-12">
+                                <h4 class="nunito-bold inline-block--xs">Autoridades y objetivos</h4>
+                                <div class="h-misc"></div>
+                            </div>
                         </div>
-                        <div class="col-xs-12">
-                            <h4 class="nunito-bold inline-block--xs">Autoridades y objetivos</h4>
-                            <div class="h-misc"></div>
+                        <div class="row vmargin-20--xs no-mg-top--xs">
+                            <div class="col-xs-11">
+                                <p class="text-secondary">Quiénes somos, nuestra misión y visión, y convenios con otras instituciones.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <span class="btn btn--primary">Ver más</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="row vmargin-20--xs no-mg-top--xs">
-                        <div class="col-xs-11">
-                            <p class="text-secondary">Quiénes somos, nuestra misión y visión, y convenios con otras instituciones.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-4">
-                            <span class="btn btn--primary">Ver más</span>
-                        </div>
-                    </div>
-                </div>
+                </a>
             </div>
             <div class="col-lg-4">
-                <div class="card-news">
-                    <div class="row middle-xs vmargin-10--xs no-mg-top--xs">
-                        <div class="col-xs-12">
-                            <p class="headline text-primary vmargin-10--xs no-mg-top--xs">Docencia</p>
+                <a href="teaching.html#teaching">
+                    <div class="card-news">
+                        <div class="row middle-xs vmargin-10--xs no-mg-top--xs">
+                            <div class="col-xs-12">
+                                <p class="headline text-primary vmargin-10--xs no-mg-top--xs">Docencia</p>
+                            </div>
+                            <div class="col-xs-12">
+                                <h4 class="nunito-bold inline-block--xs">Oferta académica y eventos</h4>
+                                <div class="h-misc"></div>
+                            </div>
                         </div>
-                        <div class="col-xs-12">
-                            <h4 class="nunito-bold inline-block--xs">Oferta académica y eventos</h4>
-                            <div class="h-misc"></div>
+                        <div class="row vmargin-20--xs no-mg-top--xs">
+                            <div class="col-xs-11">
+                                <p class="text-secondary">Carreras universitarias, maestrías, jornadas, conferencias y enlaces de interés.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <span class="btn btn--primary">Ver más</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="row vmargin-20--xs no-mg-top--xs">
-                        <div class="col-xs-11">
-                            <p class="text-secondary">Carreras universitarias, maestrías, jornadas, conferencias y enlaces de interés.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-4">
-                            <span class="btn btn--primary">Ver más</span>
-                        </div>
-                    </div>
-                </div>
+                </a>
             </div>
             <div class="col-lg-4">
-                <div class="card-news">
-                    <div class="row middle-xs vmargin-10--xs no-mg-top--xs">
-                        <div class="col-xs-12">
-                            <p class="headline text-primary vmargin-10--xs no-mg-top--xs">Investigación</p>
+                <a href="investigation.html">
+                    <div class="card-news">
+                        <div class="row middle-xs vmargin-10--xs no-mg-top--xs">
+                            <div class="col-xs-12">
+                                <p class="headline text-primary vmargin-10--xs no-mg-top--xs">Investigación</p>
+                            </div>
+                            <div class="col-xs-12">
+                                <h4 class="nunito-bold inline-block--xs">Proyectos y publicaciones</h4>
+                                <div class="h-misc"></div>
+                            </div>
                         </div>
-                        <div class="col-xs-12">
-                            <h4 class="nunito-bold inline-block--xs">Proyectos y publicaciones</h4>
-                            <div class="h-misc"></div>
+                        <div class="row vmargin-20--xs no-mg-top--xs">
+                            <div class="col-xs-11">
+                                <p class="text-secondary">Artículos publicados, proyectos realizados y en curso.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <span class="btn btn--primary">Ver más</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="row vmargin-20--xs no-mg-top--xs">
-                        <div class="col-xs-11">
-                            <p class="text-secondary">Artículos publicados, proyectos realizados y en curso.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-4">
-                            <span class="btn btn--primary">Ver más</span>
-                        </div>
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>

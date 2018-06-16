@@ -22,6 +22,10 @@
             background: linear-gradient(to right, $gradient-secondary-start 0%, $gradient-secondary-end 100%);
             border-color: transparent;
             transform: scale(1.02);
+
+            h1, h2, h3, h4, h5, h6, p, span, a{
+                color: white !important;
+            }
         }
 
         .btn--primary:hover{
