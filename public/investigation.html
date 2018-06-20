@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/flexboxgrid.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Scripts -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/sticky.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <title>FIDN - Docencia</title>
+</head>
+<body id="investigation">
+    <div id="investigationbkg" class="bkgheader"></div>
+    <nav class="navbar hide--xs block--lg">
+        <div class="row middle-xs">
+            <div class="col-lg-3">
+                <img class="img--full" src="assets/img/logo-03_apaisado_blanco.svg" alt="" data-condition="hideOnStick">
+                <img class="img--full" src="assets/img/logo-03_apaisado_blanco.svg" alt="" data-condition="showOnStick">
+            </div>
+            <div class="col-lg-9 navbar__menu">
+                <ul class="row middle-xs end-xs">
+                    <li class="navbar__menu__item"><a href="index.html">Inicio</a></li>
+                    <li class="navbar__menu__item"><a href="us.html">Quiénes somos</a></li>
+                    <li id="docencia" class="navbar__menu__item"><span>Docencia</span>
+                        <div id="submenu">
+                            <ul class="navbar__submenu">
+                                <li class="navbar__submenu__item"><a href="teaching.html#teaching">Oferta académica</a></li>
+                                <li class="navbar__submenu__item"><a href="teaching.html#events">Eventos y actividades</a></li>
+                                <li class="navbar__submenu__item"><a href="teaching.html#links">Enlaces</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navbar__menu__item active"><a href="investigation.html">Investigación</a></li>
+                    <li class="navbar__menu__item"><a href="contact.html">Contacto</a></li>
+                    <li class="navbar__menu__item"><a href="https://www.maimonides.edu/" target="_blank"><img src="assets/img/logo_maimonides_lila.png" class="linkMaimonides" alt="Universidad Maimónides"></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar-mobile hide--lg">
+        <div class="row">
+            <a class="navbar-mobile__trigger" onclick="toggleSideMenu();"><i class="fas fa-bars"></i></a>
+            <div class="navbar-mobile__sidemenu">
+                <a class="navbar-mobile__trigger" onclick="toggleSideMenu();"><i class="fas fa-times"></i></a>
+                <ul class="vmargin-40--xs">
+                    <li class="navbar-mobile__sidemenu__item"><a href="index.html">Inicio</a></li>
+                    <li class="navbar-mobile__sidemenu__item"><a href="">Quiénes somos</a></li>
+                    <li class="navbar-mobile__sidemenu__item" id="docenciaMobile" onclick="toggleSubmenuMobile();"><span>Docencia</span>
+                        <div id="submenuMobile">
+                            <ul class="navbar__submenu">
+                                <li class="navbar__submenu__item"><a href="teaching.html#teaching">Oferta académica</a></li>
+                                <li class="navbar__submenu__item"><a href="teaching.html#events">Eventos y actividades</a></li>
+                                <li class="navbar__submenu__item"><a href="teaching.html#links">Enlaces</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navbar-mobile__sidemenu__item active"><a href="">Investigación</a></li>
+                    <li class="navbar-mobile__sidemenu__item"><a href="">Contacto</a></li>
+                </ul>
+                <a href="https://www.maimonides.edu/" target="_blank" class="linkMaimonides"><img src="assets/img/logo_maimonides_lila.png" alt="Universidad Maimónides"></a>
+            </div>
+        </div>
+    </nav>
+    <div id="content" class="container">
+        <div class="row">
+            <div class="col-xs-12 vmargin-30--lg vpadding-40--xs no-pd-bottom--lg text-center--xs text-left--lg">
+                <h1 class="text-white">Investigación. Publicaciones y proyectos</h1>
+            </div>
+            <div class="col-lg-3 col-lg-offset-0 col-xs-8 col-xs-offset-2 bkg-white vpadding-20--xs hpadding-20--xs text-center--xs text-left--lg vmargin-40--xs no-mg-bottom--xs no-mg--lg">
+                <p class="headline vpadding-10--xs no-pd-top--xs">En esta página</p>
+                <ul>
+                    <li class="vpadding-10--xs no-pd-top--xs"><h4>Publicaciones/Papers</h4></li>
+                    <li class="vpadding-10--xs no-pd-top--xs"><h4>Proyectos</h4></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row vmargin-20--xs">
+            <div class="col-xs-12">
+                <div class="h-misc"></div>
+                <h4 class="headline inline-block--xs">Publicaciones/Papers</h4>
+            </div>
+        </div>
+        <div class="row vmargin-20--xs">
+            <div class="col-xs-12">
+                <h2 class="nunito-bold">Artículos publicados</h2>
+            </div>
+        </div>
+        <div class="row vmargin-40--xs">
+            <div class="col-lg-4 vmargin-30--xs no-mg-top--xs hpadding-40--xs no-pd-left--xs">
+                <a href="" target="_blank">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <img src="assets/img/documento.svg" alt="documento" class="img--full">
+                        </div>
+                        <div class="col-xs-10">
+                            <p>Correlaton between cortison level and serotonin uptake in patients with chronic stress and depression ⮕</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 vmargin-30--xs no-mg-top--xs hpadding-40--xs no-pd-left--xs">
+                <a href="" target="_blank">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <img src="assets/img/documento.svg" alt="documento" class="img--full">
+                        </div>
+                        <div class="col-xs-10">
+                            <p>Efecto de la Psicoterapia Cognitiva en la regulación del Sistema Cortico-Límbico-Hipotálamo-Hipófiso-Adrenal en pacientes con Estrés Crónico ⮕</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 vmargin-30--xs no-mg-top--xs hpadding-40--xs no-pd-left--xs">
+                <a href="" target="_blank">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <img src="assets/img/documento.svg" alt="documento" class="img--full">
+                        </div>
+                        <div class="col-xs-10">
+                            <p>El estrés crónico y sus consecuencias clínicas - el síndrome de Burnout ⮕</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 vmargin-30--xs no-mg-top--xs hpadding-40--xs no-pd-left--xs">
+                <a href="" target="_blank">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <img src="assets/img/documento.svg" alt="documento" class="img--full">
+                        </div>
+                        <div class="col-xs-10">
+                            <p>El Mobbing y sus consecuencias - el síndrome ansioso-depresivo por acoso moral ⮕</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="showMore" class="col-xs-12 hide--sm block--xs">
+                <a onclick="showMore();"><h4>VER MÁS</h4></a>
+            </div>
+            <div class="col-lg-4 vmargin-30--xs no-mg-top--xs hpadding-40--xs no-pd-left--xs hide--xs block--sm showMore">
+                <a href="" target="_blank">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <img src="assets/img/documento.svg" alt="documento" class="img--full">
+                        </div>
+                        <div class="col-xs-10">
+                            <p>Enhancement of serotonin uptake by cortisol - A possible link between stress and depression ⮕</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 vmargin-30--xs no-mg-top--xs hpadding-40--xs no-pd-left--xs hide--xs block--sm showMore">
+                <a href="" target="_blank">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <img src="assets/img/documento.svg" alt="documento" class="img--full">
+                        </div>
+                        <div class="col-xs-10">
+                            <p>Fundamentos Neurobiológicos de la Psicoterapia ⮕</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 vmargin-30--xs no-mg-top--xs hpadding-40--xs no-pd-left--xs hide--xs block--sm showMore">
+                <a href="" target="_blank">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <img src="assets/img/documento.svg" alt="documento" class="img--full">
+                        </div>
+                        <div class="col-xs-10">
+                            <p>Psiconeurobiología de la resiliencia ⮕</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 vmargin-30--xs no-mg-top--xs hpadding-40--xs no-pd-left--xs hide--xs block--sm showMore">
+                <a href="" target="_blank">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <img src="assets/img/documento.svg" alt="documento" class="img--full">
+                        </div>
+                        <div class="col-xs-10">
+                            <p>Psiconeuroendocrinología del Estrés y la Depresión ⮕</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 vmargin-30--xs no-mg-top--xs hpadding-40--xs no-pd-left--xs hide--xs block--sm showMore">
+                <a href="" target="_blank">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <img src="assets/img/documento.svg" alt="documento" class="img--full">
+                        </div>
+                        <div class="col-xs-10">
+                            <p>Psiconeuroinmunoendocrinología del estrés crónico y la depresión ⮕</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 vmargin-30--xs no-mg-top--xs hpadding-40--xs no-pd-left--xs hide--xs block--sm showMore">
+                <a href="" target="_blank">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <img src="assets/img/documento.svg" alt="documento" class="img--full">
+                        </div>
+                        <div class="col-xs-10">
+                            <p>Psychoneuroendocrinological links between chronic stress and depression ⮕</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 vmargin-30--xs no-mg-top--xs hpadding-40--xs no-pd-left--xs hide--xs block--sm showMore">
+                <a href="" target="_blank">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <img src="assets/img/documento.svg" alt="documento" class="img--full">
+                        </div>
+                        <div class="col-xs-10">
+                            <p>Regulation of HPA activity in response to cognitive therapy in patients with generalized anxiety disorder ⮕</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 vmargin-30--xs no-mg-top--xs hpadding-40--xs no-pd-left--xs hide--xs block--sm showMore">
+                <a href="" target="_blank">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <img src="assets/img/documento.svg" alt="documento" class="img--full">
+                        </div>
+                        <div class="col-xs-10">
+                            <p>The Links Between Stress and Depression ⮕</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="events" class="row vmargin-40--xs no-mg-bottom--xs vpadding-40--xs no-pd-bottom--xs">
+            <div class="col-xs-12">
+                <div class="h-misc"></div>
+                <h4 class="headline inline-block--xs">Proyectos</h4>
+            </div>
+        </div>
+        <div class="row vmargin-20--xs">
+            <div class="col-lg-8 col-xs-12">
+                <h2 class="nunito-bold">Proyectos en curso</h2>
+            </div>
+        </div>
+        <div class="row vmargin-40--xs">
+            <div class="col-lg-5">
+                <div class="row middle-xs">
+                    <div class="col-lg-4 col-xs-4 vmargin-30--xs no-mg-top--xs no-mg--lg">
+                        <img src="assets/img/vision-tactil.svg" alt="" class="img--full">
+                    </div>
+                    <div class="col-xs-8 block--xs hide--sm vmargin-30--xs no-mg-top--xs no-mg--lg">
+                        <h2>Visión táctil</h2>
+                    </div>
+                    <div class="col-lg-8 hpadding-20--lg no-pd-right--lg col-xs-12">
+                        <h3 class="hide--xs block--sm vmargin-10--xs no-mg-top--xs">Visión táctil</h3>
+                        <p class="text-soft">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim</p>
+                        <a href="contacto.html" class="btn btn--primary vmargin-20--xs no-mg-bottom--lg">Deseo saber más sobre el proyecto</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-5 col-lg-offset-1">
+                <div class="row middle-xs">
+                    <div class="col-lg-4 col-xs-4 vmargin-30--xs no-mg-top--lg no-mg--lg vpadding-30--xs no-pd-top--lg no-pd--lg no-pd-bottom--xs">
+                        <img src="assets/img/realidad-virtual.svg" alt="" class="img--full">
+                    </div>
+                    <div class="col-xs-8 block--xs hide--sm vmargin-30--xs no-mg-top--xs no-mg--lg vpadding-30--xs no-pd-top--lg no-pd--lg no-pd-bottom--xs">
+                        <h2>Realidad virtual</h2>
+                    </div>
+                    <div class="col-lg-8 hpadding-20--lg no-pd-right--lg col-xs-12">
+                        <h3 class="hide--xs block--sm vmargin-10--xs no-mg-top--xs">Realidad virtual</h3>
+                        <p class="text-soft">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim</p>
+                        <a href="contacto.html" class="btn btn--primary vmargin-20--xs no-mg-bottom--lg">Deseo saber más sobre el proyecto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row no-mg--xs">
+                <div class="col-xs-12 vpadding-10--xs no-pd--lg hpadding-40--xs col-lg-3">
+                    <div class="inline-block--xs valign--top col-xs-4">
+                        <a href="" class="footer__icon"><img src="assets/img/map.svg" alt="" class="footer__icon__img"></a>
+                    </div>
+                    <div class="inline-block--xs valign--top col-xs-8">
+                        <p>Zabala 1739</p>
+                        <p class="text-soft">Piso 3° dto A <br>Buenos Aires, Argentina</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 vpadding-10--xs no-pd--lg hpadding-40--xs col-lg-3">
+                    <div class="inline-block--xs valign--top col-xs-4">
+                        <a href="" class="footer__icon"><img src="assets/img/phone.svg" alt="" class="footer__icon__img"></a>
+                    </div>
+                    <div class="inline-block--xs valign--top col-xs-8">
+                        <p>(+5411)4555-5555</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 vpadding-10--xs no-pd--lg hpadding-40--xs col-lg-3">
+                    <div class="inline-block--xs valign--top col-xs-4">
+                        <a href="" class="footer__icon"><img src="assets/img/mail.svg" alt="" class="footer__icon__img"></a>
+                    </div>
+                    <div class="inline-block--xs valign--top col-xs-8">
+                        <p>info@fidn.org</p>
+                        <p class="text-soft">Podés dejarons un mensaje completando tus datos →</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 vpadding-10--xs no-pd--lg hpadding-40--xs col-lg-3">
+                    <div class="inline-block--xs valign--top col-xs-4">
+                        <a href="" class="footer__icon"><img src="assets/img/facebook.svg" alt="" class="footer__icon__img"></a>
+                    </div>
+                    <div class="inline-block--xs valign--top col-xs-8">
+                        <p>Departamento de Psiquiatría y Neurociencias de la Universidad Maimónides →</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

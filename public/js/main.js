@@ -31,6 +31,11 @@ function closeModal(){
     $('body').css('overflow', 'auto');
 }
 
+function showMore(){
+    $('.showMore').show();
+    $('#showMore').hide();
+}
+
 $(document).ready(function(){
     var docencia = $(".navbar__menu #docencia");
     var submenu = $(".navbar__menu #submenu");
