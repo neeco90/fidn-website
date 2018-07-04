@@ -23,7 +23,7 @@ $gradient-secondary-end: #1BC46A;
 }
 
 .text-soft{
-    opacity: .5;
+    opacity: .7;
 }
 
 .bkg-primary{
@@ -40,4 +40,8 @@ $gradient-secondary-end: #1BC46A;
 
 .bkg-white{
     background-color: white;
+}
+
+a:hover{
+    color: $tertiary;
 }
