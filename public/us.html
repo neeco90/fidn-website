@@ -32,9 +32,16 @@
             <div class="col-lg-9 navbar__menu">
                 <ul class="row middle-xs end-xs">
                     <li class="navbar__menu__item"><a href="index.html">Inicio</a></li>
-                    <li class="navbar__menu__item active"><a href="">Quiénes somos</a></li>
+                    <li id="weare" class="navbar__menu__item"><span>Quiénes somos</span>
+                        <div class="submenu">
+                            <ul class="navbar__submenu">
+                                <li class="navbar__submenu__item"><a href="us.html">Visión y misión</a></li>
+                                <li class="navbar__submenu__item"><a href="us.html#staff">Autoridades e integrantes</a></li>
+                            </ul>
+                        </div>
+                    </li>
                     <li id="docencia" class="navbar__menu__item"><span>Docencia</span>
-                        <div id="submenu">
+                        <div class="submenu">
                             <ul class="navbar__submenu">
                                 <li class="navbar__submenu__item"><a href="teaching.html#teaching">Oferta académica</a></li>
                                 <li class="navbar__submenu__item"><a href="teaching.html#events">Eventos y actividades</a></li>
@@ -42,7 +49,14 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="navbar__menu__item"><a href="investigation.html">Investigación</a></li>
+                    <li id="invest" class="navbar__menu__item"><span>Investigación</span>
+                        <div class="submenu">
+                            <ul class="navbar__submenu">
+                                <li class="navbar__submenu__item"><a href="investigation.html">Publicaciones/Papers</a></li>
+                                <li class="navbar__submenu__item"><a href="investigation.html#projects">Proyectos</a></li>
+                            </ul>
+                        </div>
+                    </li>
                     <li class="navbar__menu__item"><a href="contact.html">Contacto</a></li>
                     <li class="navbar__menu__item"><a href="https://www.maimonides.edu/" target="_blank"><img src="assets/img/logo_maimonides_lila.png" class="linkMaimonides" alt="Universidad Maimónides"></a></li>
                 </ul>
@@ -55,17 +69,9 @@
             <div class="navbar-mobile__sidemenu">
                 <a class="navbar-mobile__trigger" onclick="toggleSideMenu();"><i class="fas fa-times"></i></a>
                 <ul class="vmargin-40--xs">
-                    <li class="navbar-mobile__sidemenu__item"><a href="">Inicio</a></li>
+                    <li class="navbar-mobile__sidemenu__item"><a href="index.html">Inicio</a></li>
                     <li class="navbar-mobile__sidemenu__item active"><a href="us.html">Quiénes somos</a></li>
-                    <li class="navbar-mobile__sidemenu__item" id="docenciaMobile" onclick="toggleSubmenuMobile();"><span>Docencia</span>
-                        <div id="submenuMobile">
-                            <ul class="navbar__submenu">
-                                <li class="navbar__submenu__item"><a href="teaching.html#teaching">Oferta académica</a></li>
-                                <li class="navbar__submenu__item"><a href="teaching.html#events">Eventos y actividades</a></li>
-                                <li class="navbar__submenu__item"><a href="teaching.html#links">Enlaces</a></li>
-                            </ul>
-                        </div>
-                    </li>
+                    <li class="navbar-mobile__sidemenu__item"><a href="teaching.html">Docencia</a></li>
                     <li class="navbar-mobile__sidemenu__item"><a href="investigation.html">Investigación</a></li>
                     <li class="navbar-mobile__sidemenu__item"><a href="contact.html">Contacto</a></li>
                 </ul>
@@ -86,7 +92,7 @@
                 </ul>
             </div>
         </div>
-        <div class="row vpadding-20--xs center-xs">
+        <div id="mision" class="row vpadding-20--xs center-xs">
             <div class="col-xs-6">
                 <span class="v-misc"></span>
             </div>
@@ -132,13 +138,9 @@
                 </div>
             </div>
         </div>
-        <div class="row vmargin-40--lg vpadding-40--lg no-mg-bottom--lg no-pd-bottom--lg vmargin-20--xs middle-xs">
-            <span class="h-misc hmargin-20--xs no-mg-left--xs"></span>
-            <p class="headline">Autoridades e integrantes</p>
-        </div>
-        <div class="row vmargin-20--xs">
+        <div id="staff" class="row vmargin-20--xs vpadding-40--lg no-pd-bottom--lg">
             <div class="col-xs-12">
-                <h2 class="nunito-bold">Quiénes conformamos FIDN</h2>
+                <h2 class="nunito-bold">Autoridades e integrantes</h2>
             </div>
         </div>
         <div class="row vmargin-40--xs">

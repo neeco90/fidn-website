@@ -147,7 +147,7 @@
         }
     }
 
-    #submenu{
+    .submenu{
         display: none;
         position: absolute;
         z-index: 9;
@@ -230,7 +230,7 @@
                     }
                 }
 
-                #submenuMobile{
+                .submenuMobile{
                     display: none;
             
                     &.open{

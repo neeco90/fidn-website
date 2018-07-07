@@ -32,9 +32,16 @@
             <div class="col-lg-9 navbar__menu">
                 <ul class="row middle-xs end-xs">
                     <li class="navbar__menu__item"><a href="index.html">Inicio</a></li>
-                    <li class="navbar__menu__item"><a href="us.html">Quiénes somos</a></li>
+                    <li id="weare" class="navbar__menu__item"><span>Quiénes somos</span>
+                        <div class="submenu">
+                            <ul class="navbar__submenu">
+                                <li class="navbar__submenu__item"><a href="us.html">Visión y misión</a></li>
+                                <li class="navbar__submenu__item"><a href="us.html#staff">Autoridades e integrantes</a></li>
+                            </ul>
+                        </div>
+                    </li>
                     <li id="docencia" class="navbar__menu__item"><span>Docencia</span>
-                        <div id="submenu">
+                        <div class="submenu">
                             <ul class="navbar__submenu">
                                 <li class="navbar__submenu__item"><a href="teaching.html#teaching">Oferta académica</a></li>
                                 <li class="navbar__submenu__item"><a href="teaching.html#events">Eventos y actividades</a></li>
@@ -42,7 +49,14 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="navbar__menu__item active"><a href="investigation.html">Investigación</a></li>
+                    <li id="invest" class="navbar__menu__item"><span>Investigación</span>
+                        <div class="submenu">
+                            <ul class="navbar__submenu">
+                                <li class="navbar__submenu__item"><a href="investigation.html">Publicaciones/Papers</a></li>
+                                <li class="navbar__submenu__item"><a href="investigation.html#projects">Proyectos</a></li>
+                            </ul>
+                        </div>
+                    </li>
                     <li class="navbar__menu__item"><a href="contact.html">Contacto</a></li>
                     <li class="navbar__menu__item"><a href="https://www.maimonides.edu/" target="_blank"><img src="assets/img/logo_maimonides_lila.png" class="linkMaimonides" alt="Universidad Maimónides"></a></li>
                 </ul>
@@ -56,17 +70,9 @@
                 <a class="navbar-mobile__trigger" onclick="toggleSideMenu();"><i class="fas fa-times"></i></a>
                 <ul class="vmargin-40--xs">
                     <li class="navbar-mobile__sidemenu__item"><a href="index.html">Inicio</a></li>
-                    <li class="navbar-mobile__sidemenu__item"><a href="">Quiénes somos</a></li>
-                    <li class="navbar-mobile__sidemenu__item" id="docenciaMobile" onclick="toggleSubmenuMobile();"><span>Docencia</span>
-                        <div id="submenuMobile">
-                            <ul class="navbar__submenu">
-                                <li class="navbar__submenu__item"><a href="teaching.html#teaching">Oferta académica</a></li>
-                                <li class="navbar__submenu__item"><a href="teaching.html#events">Eventos y actividades</a></li>
-                                <li class="navbar__submenu__item"><a href="teaching.html#links">Enlaces</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="navbar-mobile__sidemenu__item active"><a href="">Investigación</a></li>
+                    <li class="navbar-mobile__sidemenu__item"><a href="us.html">Quiénes somos</a></li>
+                    <li class="navbar-mobile__sidemenu__item"><a href="teaching.html">Docencia</a></li>
+                    <li class="navbar-mobile__sidemenu__item active"><a href="investigation.html">Investigación</a></li>
                     <li class="navbar-mobile__sidemenu__item"><a href="">Contacto</a></li>
                 </ul>
                 <a href="https://www.maimonides.edu/" target="_blank" class="linkMaimonides"><img src="assets/img/logo_maimonides_lila.png" alt="Universidad Maimónides"></a>
@@ -86,7 +92,7 @@
                 </ul>
             </div>
         </div>
-        <div class="row vmargin-20--xs">
+        <div id="papers" class="row vmargin-20--xs">
             <div class="col-xs-12">
                 <div class="h-misc"></div>
                 <h4 class="headline inline-block--xs">Publicaciones/Papers</h4>
@@ -258,7 +264,7 @@
                 </a>
             </div>
         </div>
-        <div id="events" class="row vmargin-40--xs no-mg-bottom--xs vpadding-40--xs no-pd-bottom--xs">
+        <div id="projects" class="row vmargin-40--xs no-mg-bottom--xs vpadding-40--xs no-pd-bottom--xs">
             <div class="col-xs-12">
                 <div class="h-misc"></div>
                 <h4 class="headline inline-block--xs">Proyectos</h4>

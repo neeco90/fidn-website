@@ -8,18 +8,18 @@ function toggleSideMenu(){
         $("body").css("overflow", "auto");
         $(".navbar-mobile__sidemenu").removeClass("open");
     }
-}
+}/* 
 
 function toggleSubmenuMobile(){
     var docencia = $("#docenciaMobile");
-    var submenu = $("#submenuMobile");
+    var submenu = $(".submenuMobile");
 
     if(!submenu.hasClass("open")){
         submenu.addClass("open");
     } else{
         submenu.removeClass("open");
     }
-}
+} */
 
 function openModal(){
     $('#bkgopacity, #modal').fadeIn();
@@ -96,22 +96,52 @@ function validateForm(event){
 }
 
 $(document).ready(function(){
-    var docencia = $(".navbar__menu #docencia");
-    var submenu = $(".navbar__menu #submenu");
-
-    docencia.mouseover(function(){
-        submenu.addClass("open");
+    //Docencia
+    $(".navbar__menu #docencia").mouseover(function(){
+        $(".navbar__menu #docencia .submenu").addClass("open");
     });
 
-    docencia.mouseleave(function(){
-        submenu.mouseover(function(){
+    $(".navbar__menu #docencia").mouseleave(function(){
+        $(".navbar__menu #docencia .submenu").mouseover(function(){
             return
         });
-        submenu.removeClass("open");
+        $(".navbar__menu #docencia .submenu").removeClass("open");
     });
     
-    submenu.mouseleave(function(){
-        submenu.removeClass("open");
+    $(".navbar__menu #docencia .submenu").mouseleave(function(){
+        $(".navbar__menu #docencia .submenu").removeClass("open");
+    });
+
+    //quienes somos
+    $(".navbar__menu #weare").mouseover(function(){
+        $(".navbar__menu #weare .submenu").addClass("open");
+    });
+
+    $(".navbar__menu #weare").mouseleave(function(){
+        $(".navbar__menu #weare .submenu").mouseover(function(){
+            return
+        });
+        $(".navbar__menu #weare .submenu").removeClass("open");
+    });
+    
+    $(".navbar__menu #weare .submenu").mouseleave(function(){
+        $(".navbar__menu #weare .submenu").removeClass("open");
+    });
+
+    //investigacion
+    $(".navbar__menu #invest").mouseover(function(){
+        $(".navbar__menu #invest .submenu").addClass("open");
+    });
+
+    $(".navbar__menu #invest").mouseleave(function(){
+        $(".navbar__menu #invest .submenu").mouseover(function(){
+            return
+        });
+        $(".navbar__menu #invest .submenu").removeClass("open");
+    });
+    
+    $(".navbar__menu #invest .submenu").mouseleave(function(){
+        $(".navbar__menu #invest .submenu").removeClass("open");
     });
 
     if(screen.width <= 450){
